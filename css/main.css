@@ -1,7 +1,15 @@
 body {
+    background-image: url(campanile.jpg);
+    background-position: center;
+    background-color: black;
+    background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-size: cover;
+    background-size: cover;
     margin: 60px auto;
     width: 70%;
 }
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -14,10 +22,10 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color:white;
 }
 a:hover {
-    text-decoration: underline;
+    color:gray;
 }
 h1 {
     font-size: 3em;
@@ -31,6 +39,7 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    position:fixed;bottom:0;left:0;right:0;height:70px;
 }
 
 ul.posts { 
@@ -40,4 +49,29 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.layout {
+    display:flex;
+    margin:0 auto;
+    max-width:70%;
+}
+
+.img--responsive {
+        max-width:100%;
+}
+
+.backgroundFixedRatio {
+    width:100%;
+    height:0;
+    padding-bottom:50%;
+    position:relative;
+}
+#read {
+    color:white;
+    font-size:90%;
+    font-family:'Arial';
+}
+#read:hover {
+    color:gray;
 }
