@@ -1,7 +1,6 @@
 body {
     background-image: url(campanile.jpg);
     background-position: center;
-    background-color: black;
     background-attachment: fixed;
     -moz-background-attachment: fixed;
     -o-background-size: cover;
