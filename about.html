@@ -18,16 +18,57 @@
     		<div class="blurb">
         		<h1>About Me</h1>
         		<p style="font-size:150%;font-family:Arial;color:white;"><i><b>Hi, I'm Kelly!</b></i></p>
-				<p style="font-size:105%;font-family:Arial;color:white;"><b>I'm a fourth year student at the University of California, Berkeley, planning on attending law school starting fall of 2017. I love trying out new things, whether it's coding this website, or cooking brunch for my friends!</b></p> 
-				<p style="font-size:110%;font-family:Arial;color:white;"><b>Check out my random fact generator to learn more about me!</b></p>
+				<p style="font-size:100%;font-family:Arial;color:white;"><b>I'm a fourth year student at the University of California, Berkeley, planning on attending law school starting fall of 2017. While I'm not a Computer Science major, I'm having a lot of fun working on this website! Thanks to my fellow #GirlsWhoCode, Diana Akrami and Lauren Benitez, for all the help!</b></p> 
+				<p style="font-size:110%;font-family:Arial;color:white;"><b>Check out my fun fact generator to learn more about me!</b></p>
 				<br></br>
 
-				<h2 style="text-align:center;font-family:Arial;color:white;"><b>Fun Facts about Kelly</b></h2>
-				<p style="text-align:center;font-family:Arial;">This is where the fact goes.</p>
-				<br><br>
-				<button style="text-align:center;">Next Fact</button>
+		<script type="text/javascript">
+document.write("<br>")
 
-    		</div><!-- /.blurb -->
+function onClick() {
+function generateRandomFact(first, last) {
+return Math.floor(Math.random() * (last - first + 1)) + first;
+}
+
+randomfactno = generateRandomFact(1, 10)
+
+if (randomfactno == 1) {
+alert("My first language was Polish.");
+}
+else if (randomfactno == 2) {
+alert("I love coffee; Starbucks is my favorite kind!");
+}
+else if (randomfactno == 3) {
+alert("I earned the California State Seal of Biliteracy in Spanish.");
+}
+else if (randomfactno == 4) {
+alert("My dream vacation would be to Egypt.");
+}
+else if (randomfactno == 5) {
+alert("My favorite book is Hard Choices by Hillary Clinton.");
+}
+else if (randomfactno == 6) {
+alert("My favorite TV show is Scandal.");
+}
+else if (randomfactno == 7) {
+alert("I love food! I'm always excited to try new things (especially if it involves cheese).");
+}
+else if (randomfactno == 8 ) {
+alert("I'm obsessed with sea otters.");
+}
+else if (randomfactno == 9) {
+alert("I love country music.")
+}
+else if (randomfactno == 10) {
+alert("I have dual citizenship in the United States and Poland.");
+}
+else {
+alert("Javascript Error.");;
+}
+}
+</script>
+<button onclick="onClick()">Generate Fact about Me</button>
+		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
     		<ul>
